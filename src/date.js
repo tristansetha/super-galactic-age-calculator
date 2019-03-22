@@ -5,10 +5,14 @@ export default class Date {
     this.gender = gender;
   }
 
-  age() {
+  getAge() {
     return this.age;
   }
   
+  getPlanet() {
+    return this.planet;
+  }
+
   ageCalc() {
     let earthDays = this.age * 365;
     if (this.planet == "Mercury") {
@@ -51,5 +55,4 @@ export default class Date {
       return "You have" + " " +  Math.abs(this.lifeExpectancyCalc()) + " " + "years to live";
     }
   }
-
 }

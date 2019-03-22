@@ -2,17 +2,20 @@
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
-// import { Date } from './checker.js';
+import  Date  from './date.js';
 
 $(document).ready(function() {
-  // $("#run").submit(function(event) {
-  //   event.preventDefault();
+  $("#run").submit(function(event) {
+    event.preventDefault();
 
-  //   var d = parseInt($("#day").val());
-  //   var m = parseInt($("#month").val());
-  //   var yr = parseInt($("#year").val());
+    let age = parseInt($("#age").val());
+    let planet = $("#planet").val();
+    let gender = $("#gender").val();
 
-  //   $("#result").text(year + result);
-  //   $("#result").text("The above date is a " + day() + ".");
-  // });
+    let newDate = new Date(age, planet, gender);
+
+    $("#result").text(newDate.lifeExpentancyNotification());
+    $("#resultPlanet").text(newDate.getPlanet());
+    $("#resultPlanetAge").text(newDate.ageCalc());
+  });
 });
