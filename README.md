@@ -22,7 +22,7 @@ $ cd super-galactic-age-calculator
 <br/>open entire directory in preffered text editor
 
 ### Setup:
-<br/>Download and home brew: 
+<br/>Download and install home brew: 
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```

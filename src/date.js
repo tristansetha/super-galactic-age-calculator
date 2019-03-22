@@ -1,11 +1,15 @@
 export default class Date {
-  constructor(age, planet, lifeExpectancy) {
-    this.age = age;
+  constructor(age, planet, gender) {
+    this.age = parseInt(age);
     this.planet = planet;
-    this.lifeExpectancy = lifeExpectancy;
+    this.gender = gender;
+  }
+
+  age() {
+    return this.age;
   }
   
-  age() {
+  ageCalc() {
     let earthDays = this.age * 365;
     if (this.planet == "Mercury") {
       return earthDays / 87.6;
@@ -21,7 +25,7 @@ export default class Date {
     }
   }
 
-  lifeExpectancy() {
+  // lifeExpectancy() {
 
-  }
+  // }
 }
