@@ -16,13 +16,16 @@ export default class Date {
       return Math.round(ageMercury * 100) / 100;
     }
     else if (this.planet == "Venus") {
-      return earthDays / 226.3;
+      let ageVenus = earthDays / 226.3;
+      return Math.round(ageVenus * 100) / 100;
     }
     else if (this.planet == "Mars") {
-      return earthDays / 686.2;
+      let ageMars = earthDays / 686.2;
+      return Math.round(ageMars * 100) / 100;
     }
     else if (this.planet == "Jupiter") {
-      return earthDays / 4328.9;
+      let ageJupiter = earthDays / 4328.9;
+      return Math.round(ageJupiter * 100) / 100;
     }
   }
 
