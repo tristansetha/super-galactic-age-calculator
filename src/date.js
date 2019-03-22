@@ -29,7 +29,26 @@ export default class Date {
     }
   }
 
-  // lifeExpectancy() {
+  earthExpectancy() {
+    if (this.gender == "Male") {
+      return 68.33;
+    } 
+    else if (this.gender == "Female") {
+      return 72.66;
+    }
+  }
 
-  // }
+  lifeExpectancyCalc() {
+    return this.earthExpectancy() - this.ageCalc();
+  }
+
+  lifeExpentancyNotification() {
+    if (this.lifeExpenctancyCalc() < 0) {
+      return "You have lived" + (this.lifeExpectancyCalc() + (this.lifeExpectancyCalc() * 2)) + "past the life expenctancy";
+    }
+    else if (this.lifeExpectancyCalc() > 0) {
+      return "You have" + this.lifeExpectancyCalc() + "years to live on";
+    }
+  }
+
 }
