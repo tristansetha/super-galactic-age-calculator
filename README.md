@@ -72,6 +72,10 @@ $ npm run test
 | User chooses any planet, enters age | Mercury, 25 | 107 years old, life expenctancy: xx |
 | User chooses planet, enters average life expenctancy on earth | Mercury, (Earth life expenctancy) | (Mercury life expenctancy) |
 
+## Sources
+
+https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
+
 
 ## Technologies Used
 
