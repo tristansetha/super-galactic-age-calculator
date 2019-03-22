@@ -21,6 +21,8 @@ $ cd super-galactic-age-calculator
 Open entire directory in preffered text editor
 
 ### Setup:
+(Installing Node through homebrew)
+If you do not wish to install node through the command line via home brew skip this step.
 Download and install home brew by running the command in the home directory: 
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
