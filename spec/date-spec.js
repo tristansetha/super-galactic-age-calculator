@@ -33,4 +33,15 @@ describe('Date', function() {
     expect(newMercuryMale.lifeExpectancyCalc()).toEqual(-35.84);
     expect(newMercuryFemale.lifeExpectancyCalc()).toEqual(-31.51);
   });
+
+  it('lifeExpectancyNotification method returns correct message', function() {
+    let newMercuryMale = new Date(25, "Mercury", "Male");
+    let newMercuryFemale = new Date(25, "Mercury", "Female");
+    let newVenusMale = new Date(25, "Venus", "Male");
+    let newVenusFemale = new Date(25, "Venus", "Female");
+    expect(newMercuryMale.lifeExpentancyNotification()).toEqual("You have lived" + " " + 35.84 + " " + "years past the life expenctancy");
+    expect(newMercuryFemale.lifeExpentancyNotification()).toEqual("You have lived" + " " + 31.51 + " " + "years past the life expenctancy");
+    expect(newVenusMale.lifeExpentancyNotification()).toEqual("You have" + " " +  28.01 + " " + "years to live");
+    expect(newVenusFemale.lifeExpentancyNotification()).toEqual("You have" + " " +  32.34 + " " + "years to live");
+  });
 });

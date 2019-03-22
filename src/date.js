@@ -39,15 +39,16 @@ export default class Date {
   }
 
   lifeExpectancyCalc() {
-    return this.earthExpectancy() - this.ageCalc();
+    let newExpectacy = this.earthExpectancy() - this.ageCalc();
+    return Math.round(newExpectacy * 100) / 100;
   }
 
   lifeExpentancyNotification() {
-    if (this.lifeExpenctancyCalc() < 0) {
-      return "You have lived" + (this.lifeExpectancyCalc() + (this.lifeExpectancyCalc() * 2)) + "past the life expenctancy";
+    if ((this.lifeExpectancyCalc()) < 0) {
+      return "You have lived" + " " + Math.abs(this.lifeExpectancyCalc()) + " " + "years past the life expenctancy";
     }
-    else if (this.lifeExpectancyCalc() > 0) {
-      return "You have" + this.lifeExpectancyCalc() + "years to live on";
+    else if ((this.lifeExpectancyCalc()) > 0) {
+      return "You have" + " " +  Math.abs(this.lifeExpectancyCalc()) + " " + "years to live";
     }
   }
 
