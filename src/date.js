@@ -12,7 +12,8 @@ export default class Date {
   ageCalc() {
     let earthDays = this.age * 365;
     if (this.planet == "Mercury") {
-      return earthDays / 87.6;
+      let ageMercury = earthDays / 87.6;
+      return Math.round(ageMercury * 100) / 100;
     }
     else if (this.planet == "Venus") {
       return earthDays / 226.3;

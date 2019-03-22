@@ -8,4 +8,11 @@ describe('Date', function() {
     expect(newDate.planet).toEqual("Earth");
     expect(newDate.gender).toEqual("male");
   });
+
+  it('calculates correct age when user enters a planet', function() {
+    var newDate1 = new Date(25, "Mercury", "male");
+    expect(newDate1.ageCalc()).toEqual(104.17);
+    // expect(newDate.planet).toEqual("Earth");
+    // expect(newDate.gender).toEqual("male");
+  });
 });
