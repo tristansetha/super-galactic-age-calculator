@@ -21,7 +21,7 @@ $ cd super-galactic-age-calculator
 Open entire directory in preffered text editor
 
 ### Setup:
-Download and install home brew by running the command: 
+Download and install home brew by running the command in the home directory: 
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -33,7 +33,28 @@ Install node by running the command:
 ```
 $ brew install node
 ```
+
+Go to the super-galactic-age-calculator project directory and use commands:
+```
+$ npm install
+```
+```
+$ npm run build
+```
+If all else fails (Reinstall webpack) by running these commands:
+```
+$ npm install webpack@4.0.1 --save-dev
+$ npm install webpack-dev-server@3.1.0 --save-dev
+AND THEN 
+$ npm run build
+```
+
 ### To run tests:
+
+To run tests use command
+```
+$ npm run test
+```
 
 ## Specs
 
