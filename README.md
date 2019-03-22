@@ -47,7 +47,8 @@ $ brew install node
 | User chooses Venus |  |  | 
 | User chooses Mars | | |
 | User chooses Jupiter |  | |
-| User chooses any planet and enters age | Mercury, 25 | 107 years old, life expenctancy: xx |
+| User chooses any planet, enters age | Mercury, 25 | 107 years old, life expenctancy: xx |
+| User chooses planet, enters average life expenctancy on earth | Mercury, (Earth life expenctancy) | (Mercury life expenctancy) |
 
 
 ## Technologies Used
