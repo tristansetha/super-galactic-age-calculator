@@ -18,7 +18,7 @@ Navigate into the super-galactic-age-calculator directory
 $ cd super-galactic-age-calculator
 ```
 ### To edit: 
-Open entire directory in preffered text editor
+Open entire directory in preferred text editor
 
 ### Setup:
 (Installing Node through homebrew)
@@ -52,8 +52,8 @@ $ npm run build
 ```
 
 ### To run tests:
-
-To run tests use command
+Update date-spec.js and
+Use command
 ```
 $ npm run test
 ```
