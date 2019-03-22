@@ -26,4 +26,11 @@ describe('Date', function() {
     expect(newDateMale.earthExpectancy()).toEqual(68.33);
     expect(newDateFemale.earthExpectancy()).toEqual(72.66);
   });
+
+  it('lifeExpectancyCalc method returns correct calculation', function() {
+    let newMercuryMale = new Date(25, "Mercury", "Male");
+    let newMercuryFemale = new Date(25, "Mercury", "Female");
+    expect(newMercuryMale.lifeExpectancyCalc()).toEqual(-35.84);
+    expect(newMercuryFemale.lifeExpectancyCalc()).toEqual(-31.51);
+  });
 });
