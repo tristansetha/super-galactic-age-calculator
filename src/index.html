@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>super-galactic-age-calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>super-galactic-age-calculator</h1>
+      </div>
+      <div class="row" id="userOuput">
+        <p id="result"></p>
+        <p id="resultPlanet"></p>
+        <p id="resultPlanetAge"></p>
+      </div>
+      <div class="row">
+        <a id="planetImage"></a>
+      </div>
+      <form id="formCalculator" action="submit">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <label for="age">enter age: </label>
+            <input type="text" name="age" id="age">
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+          <select name="planets">
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus"</option>
+            <option value="Mars">Mars</option>
+            <option value="Jupiter">Juppiter</option>
+          </select>
+        </div>
+        <div class="row">
+          <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female"</option>
+          </select>
+        </div>
+        <div class="row">
+            <button id="submitButton" type="submit" class="btn btn-danger">submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

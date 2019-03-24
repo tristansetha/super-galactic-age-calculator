@@ -5,12 +5,12 @@ import 'bootstrap';
 import  Date  from './date.js';
 
 $(document).ready(function() {
-  $("#run").submit(function(event) {
+  $("form#formCalculator").submit(function(event) {
     event.preventDefault();
 
-    let age = parseInt($("#age").val());
-    let planet = $("#planet").val();
-    let gender = $("#gender").val();
+    let age = parseInt($("input#age").val());
+    let planet = $("select#planets").val();
+    let gender = $("select#gender").val();
 
     let newDate = new Date(age, planet, gender);
 
