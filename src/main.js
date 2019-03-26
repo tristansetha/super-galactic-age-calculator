@@ -13,9 +13,12 @@ $(document).ready(function() {
     let gender = $("select#gender").val();
 
     let newDate = new Date(age, planet, gender);
+    let lifeExpectancy = newDate.lifeExpectancyNotification();
+    let newPlanet = newDate.getPlanet();
+    let newPlanetAge = newDate.ageCalc();
 
-    $("#result").text(newDate.lifeExpentancyNotification());
-    $("#resultPlanet").text(newDate.getPlanet());
-    $("#resultPlanetAge").text(newDate.ageCalc());
+    $("p#result").text(lifeExpectancy);
+    $("p#resultPlanet").text(newPlanet);
+    $("p#resultPlanetAge").text(newPlanetAge);
   });
 });

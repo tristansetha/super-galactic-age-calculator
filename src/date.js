@@ -47,7 +47,7 @@ export default class Date {
     return Math.round(newExpectacy * 100) / 100;
   }
 
-  lifeExpentancyNotification() {
+  lifeExpectancyNotification() {
     if ((this.lifeExpectancyCalc()) < 0) {
       return "You have lived" + " " + Math.abs(this.lifeExpectancyCalc()) + " " + "years past the life expenctancy";
     }
